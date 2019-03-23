@@ -13,3 +13,10 @@ function createHTMLELement(str, element, clName, id){
         return '<'+element+'>' + str + '</'+element+'>';
     }
 }
+
+// function to add strings to an HTML element
+function addToHTMLElement(str, elem){
+    console.log('function that adds "string" to "HTML element"' );
+
+    document.getElementById(elem).innerHTML = str;
+}
