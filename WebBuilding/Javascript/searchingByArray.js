@@ -17,3 +17,28 @@ function nodeBasedOnArray(pathPos){
     return  pathReturnedValue = arrayOfVal[pathPos[pathPos.length-1]];
 
 }
+
+
+//========================================
+// 2nd version - same concept...
+// searching through an array of JSON data using index(es)
+
+var swapArray=[];
+function getPath (arrMe) {
+    var manipulateMe=[];
+    swapArray=[];
+    var i=0;
+    while(i<arrMe.length){
+        if(manipulateMe.length==0){
+            // console.log('manipulateMe1', manipulateMe);
+            manipulateMe = JSON.parse(localStorage.getItem('tabs')); // JSON/BIG array to pull from 
+        }else{
+            manipulateMe = swapArray;
+            console.log('manipulateMe2', manipulateMe);
+
+        }
+        swapArray = manipulateMe[arrMe[i]];
+        console.log('swapArray', swapArray);
+        i++;
+    }
+}
