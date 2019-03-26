@@ -1,0 +1,7 @@
+
+/* CSS for making a grid */
+.grid1{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    align-content: center;
+}
