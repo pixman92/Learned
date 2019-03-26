@@ -42,3 +42,16 @@ function getPath (arrMe) {
         i++;
     }
 }
+
+//========================================
+// v3.0 - a simpler/cleaner verison of parsing JSON/BIG arrays
+function getPath2 (arrMe) {
+    var manipulateMe = JSON.parse(localStorage.getItem('tabs'));
+    var i=0;
+    while(i<arrMe.length){
+        console.log('manipulateMe2', manipulateMe);
+        manipulateMe = manipulateMe[arrMe[i]];
+        i++;
+    }
+    return manipulateMe;
+}
