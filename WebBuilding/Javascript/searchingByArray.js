@@ -21,7 +21,7 @@ function nodeBasedOnArray(pathPos){
 
 //========================================
 // 2nd version - same concept...
-// searching through an array of JSON data using index(es)
+// searching through an array of JSON data using index(es) 
 
 var swapArray=[];
 function getPath (arrMe) {
