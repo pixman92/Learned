@@ -1,0 +1,5 @@
+/* make a grid, center all items */
+.grid1{
+    display: grid;
+    justify-items: center;
+}
