@@ -3,20 +3,17 @@
 // an example
 // arr = ['hello', 'my name is', 'charles']
 // drillDownArray(arr, [0, 2]);
+var arrayOfValues; var arrSaved=[];
+function drillDown(arrayOfValues, pathPos){
+    arrayOfValues = arrayOfValues[pathPos[0]];
 
-
-var returnedArray=[];
-function drillDownArray(arrayOfValues, pathPos){
-    if(returnedArray==""){
-        returnedArray = arrayOfValues;
-        console.log('returnedArray', returnedArray);
+    console.log({arrayOfValues}, );
+    console.log(pathPos.length );
+    
+    if(pathPos.length>0){
+        pathPos.shift();
+        arrSaved.push(arrayOfValues);
+        drillDown(arrayOfValues, pathPos);
     }
-    for(var i=0; i<pathPos.length;i++){
-        if(i==pathPos.length-1){
-            return returnedArray;
-        }
-        console.log('val', returnedArray = returnedArray[pathPos[i]]);
-    }
-    // return returnedArray;
+    return arrSaved[arrSaved.length-1];
 }
-
