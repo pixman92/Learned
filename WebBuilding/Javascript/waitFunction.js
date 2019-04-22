@@ -4,7 +4,7 @@ function wait(timout){
 }
 
 //promises
-wait(500).then(()=> doSomething())
+// wait(500).then(()=> doSomething())
 
 
 //async/await
