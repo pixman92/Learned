@@ -9,4 +9,8 @@ function wait(timout){
 
 //async/await
 await wait(500)
-doSomething
+doSomething()
+
+
+//set an infinite loop, if the function() completes - end loop
+//else, continue loop until condition is met
