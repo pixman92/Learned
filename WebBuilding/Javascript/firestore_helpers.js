@@ -9,28 +9,40 @@ function addDataToFirestore(path, data){
     });   
 }
 
-function pullDataOdd(path){
-    db2.collection(path).get().
-    then((doc)=>{
-        // console.log('docdata', doc.data());
-        if(doc.exists){
-            console.log('doc', doc);
-        }else{
-            console.log('no doc');
-        }
-    });
+var savedDoc=[];
+function pullDataFromFirestore(path){
+    if(isOddOrEven(path)=="odd"){
+        db2.doc(path).get().
+        then((doc)=>{
+            // console.log('docdata', doc.data());
+            if(doc.exists){
+                console.log('doc', doc.data());
+                savedDoc.push(doc.data());
+            }else{
+                console.log('no doc');
+            }
+        }); 
+    }
+    if(isOddOrEven(path)=="even"){
+        db2.collection(path).get().
+        then((doc)=>{
+            // console.log('docdata', doc.data());
+            if(doc.exists){
+                console.log('doc', doc);
+                savedDoc.push(doc);
+            }else{
+                console.log('no doc');
+            }
+        });
+    }
 }
 
-function pullDataEven(path){
-    db2.doc(path).get().
-    then((doc)=>{
-        // console.log('docdata', doc.data());
-        if(doc.exists){
-            console.log('doc', doc.data());
-        }else{
-            console.log('no doc');
-        }
-    });
+function isOddOrEven(str){
+    if((str.split('/').length-1)%2==0){
+        return "even";
+    }else{
+        return "odd";
+    }
 }
 
 //================================================
@@ -53,13 +65,7 @@ async function queryData(path){
     });  
 }
 
-function isOddOrEven(str){
-    if((str.split('/').length-1)%2==0){
-        return "even";
-    }else{
-        return "odd";
-    }
-}
+
 
 //NEXT? - figuring out how to compile all 'fields'
 function pullFields(path){
