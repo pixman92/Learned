@@ -1,4 +1,5 @@
-//defines the function
+//defines the wait function() - for timing out a task
+//partically useful in Firestore
 function wait(timout){
     return new Promise(resolve=>setTimeout(resolve, timout));
 }
