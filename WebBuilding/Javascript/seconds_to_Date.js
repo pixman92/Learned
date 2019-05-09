@@ -3,7 +3,13 @@
 var newD = new Date();
 newD.setSeconds(seconds);
 
-db2.collection(path).where('date', '==', newD);
+//other way
+
+var newD = new Date(seconds);
+
+//================================================
+
+db2.collection(path).where('date', '<', oneSecMore).where('date', '>', oneSecLess);
 
 
 //pulling seconds from web
