@@ -6,15 +6,28 @@ function whereFinder(inputDate){
     //then calls where() for all logins before and after the date given
 
     //reseting whereFinderPaths[] 
-    whereFinderPaths = [];
 
-    var newDate = new Date(inputDate);
-    afterDate = new Date();
-    beforeDate = new Date();
-    afterDate.setDate(newDate.getDate()+1);
-    beforeDate.setDate(newDate.getDate()-1);
+    dateLessTmp = new Date();
+    dateLessTmp = dateToBePassed.setSeconds(dateToBePassed.getSeconds() - 1);
+
+    dateMoreTmp = new Date();
+    dateMoreTmp = dateToBePassed.setSeconds(dateToBePassed.getSeconds() + 2);
+
+    var dateLess = new Date(dateLessTmp);
+    // dateLess.setSeconds(dateLessTmp);
+
+    var dateMore = new Date(dateMoreTmp);
+
+
+    // whereFinderPaths = [];
+
+    // var newDate = new Date(inputDate);
+    // afterDate = new Date();
+    // beforeDate = new Date();
+    // afterDate.setDate(newDate.getDate()+1);
+    // beforeDate.setDate(newDate.getDate()-1);
     // input = inputDate.setHours(0,0,0,0);
-    db2.collection('dummy').where('date', '<', afterDate).where('date', '>', beforeDate)
+    db2.collection('dummy').where('date', '<', dateMore).where('date', '>', dateLess)
     .get()
     .then((snapshot)=>{
         snapshot.forEach((doc)=>{
