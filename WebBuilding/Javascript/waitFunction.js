@@ -21,6 +21,7 @@ doSomething()
 //using wait() function in realworld...
 
 function big(){
+    smallOne();
     function smallOne(){
         first();
         wait(700).then(()=>{
