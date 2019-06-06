@@ -19,7 +19,7 @@ function drillDown(arrayOfValues, pathPos){
 }
 
 
-//Example:
-//var arr = [1, 2, [11, 12, 13], 3, 4];
+// Example:
+// var arr = [1, 2, [11, 12, 13], 3, 4];
 // drillDown(arr, [2])      //output -  [11, 12, 13]
 // drillDown(arr, [2, 0])   //output - 11
