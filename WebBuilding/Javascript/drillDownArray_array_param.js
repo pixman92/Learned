@@ -3,7 +3,7 @@
 // an example
 // arr = ['hello', 'my name is', 'charles']
 // drillDownArray(arr, [0, 2]);
-var arrayOfValues; var arrSaved=[];
+var arrSaved=[];
 function drillDown(arrayOfValues, pathPos){
     arrayOfValues = arrayOfValues[pathPos[0]];
 
@@ -17,3 +17,9 @@ function drillDown(arrayOfValues, pathPos){
     }
     return arrSaved[arrSaved.length-1];
 }
+
+
+//Example:
+//var arr = [1, 2, [11, 12, 13], 3, 4];
+// drillDown(arr, [2])      //output -  [11, 12, 13]
+// drillDown(arr, [2, 0])   //output - 11
