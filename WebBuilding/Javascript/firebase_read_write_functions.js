@@ -1,21 +1,21 @@
-function adding(data){
+function adding(root, data){
     //function that adds to firebase
     //when there is no existing doc, already
-    db.collection("/chatrooms2/").add(data);
+    db.collection(root).add(data);
 
 }
 
-function addDoc(docMe, data){
+function addDoc(root, docMe, data){
     //function to push updated data up to firebase
-    db.collection('chatrooms2').doc(docMe).set(data, {merge: true});
+    db.collection(root).doc(docMe).set(data, {merge: true});
 }
 
-var evenArr2=[];
+var wholeDoc=[];
 async function getting(main, docMe){
-    evenArr2=[];
+    wholeDoc=[];
     await db.collection(main).doc(docMe).get().then(async (snap)=>{
         console.log(snap.data());
-        await evenArr2.push(snap.data());
+        await wholeDoc.push(snap.data());
     });
 
 }
