@@ -1,7 +1,7 @@
 //seconds to date
 
 var newD = new Date(null);
-newD.setSeconds(<seconds>);
+newD.setSeconds(<secons);
 
 // //other way
 

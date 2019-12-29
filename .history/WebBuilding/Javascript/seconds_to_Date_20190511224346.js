@@ -1,0 +1,19 @@
+//seconds to date
+
+var newD = new Date();
+newD.setSeconds(seconds);
+
+//other way
+
+var newD = new Date(seconds);
+
+//================================================
+
+db2.collection(path).where('date', '<', oneSecMore).where('date', '>', oneSecLess);
+
+
+//pulling seconds from web
+// id = date
+
+var toSecDate = new Date('<date>');
+toSecDate.getTime()/1000;
