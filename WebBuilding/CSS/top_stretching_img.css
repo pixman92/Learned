@@ -1,3 +1,8 @@
+#headerPhoto{
+    position: relative; /* allows repositioning */            
+    transform: translate(-50%,0);
+}
+
 .centered{
     width: 100%;
     margin: 0 auto;
