@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var myArgs = process.argv.slice(2);
+console.log('myArgs: ', myArgs);
+
+if(myArgs[0] == 'hello'){
+console.log("you said hello");
+}
