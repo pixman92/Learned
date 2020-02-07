@@ -1,5 +1,6 @@
 
 //function to take an element, and change CSS
-function nudgeCSS (id, changeMe, changeTo) {
-    document.getElementById(id).style[changeMe] = changeTo;
+function nudgeCSS (select, changeMe, changeTo) {
+    elem = document.querySelector(select);
+    elem.style[changeMe] = changeTo;
 }
