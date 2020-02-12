@@ -6,7 +6,7 @@
 
 function findRoom(date){
 
-    // date1 = new Date("May 26,2019 7:48:05 PM");
+    // date1 = new Date("May 26,2019 7:48:05 PM");      // requires, Text Month, no 'at' and space before AM/PM
     // date2 = new Date("May 26,2019 7:48:07 PM");
 
 
