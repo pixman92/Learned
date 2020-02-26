@@ -1,0 +1,56 @@
+//Code for making a functioning, NavBar
+//NEXT? - adding JS functioning to make HTML react to button press
+
+<div class="navBar">
+    <div class="pure-g">
+        <div id="leftNav" class="w3-border pure-u-1-2 w3-container w3-green">
+            <p class="padMeRight">Daily</p cal>
+        </div>
+        <div id="rightNav" class="w3-border pure-u-1-2 w3-container">
+            <p class="padMeLeft">Email<p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+//CSS to make the NavBar rest on bottom
+.navBar{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    background: grey;
+    width: 80%;   
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.padMeLeft{
+    padding-left: 4em;
+ }
+.padMeRight{
+    padding-right: 4em;
+ }
+ 
+ 
+ 
+ //function to make NavBar nice
+function removeAll(elem){
+    document.getElementById('leftNav').classList.remove("w3-green");
+    document.getElementById('rightNav').classList.remove("w3-green");
+
+    document.getElementById(elem).classList.add('w3-green');
+}
+
+
+//EventListeners - tos stripe the Nav bar of color class
+document.getElementById('leftNav').addEventListener('click', ()=>{
+    removeAll('leftNav');
+});
+document.getElementById('rightNav').addEventListener('click', ()=>{
+    removeAll('rightNav');
+});
