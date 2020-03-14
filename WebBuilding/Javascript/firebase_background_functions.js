@@ -38,7 +38,7 @@ async function whereMe(root, first, second){
 function secsToDate(seconds) {
     //function takes seconds from doc.data()
     //converts to a whole date String
-    var newD = new Date();
+    var newD = new Date(1970, 0, 1);
 
     newD.setSeconds(seconds);
 
