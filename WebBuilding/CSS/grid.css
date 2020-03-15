@@ -6,6 +6,13 @@
     align-content: center;
 }
 
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
 
 /*  Example of how a HTML Grid would work*/
 /* <div class="grid1"> */
