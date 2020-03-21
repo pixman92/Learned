@@ -1,0 +1,44 @@
+// this code is two classes in CSS
+// they make a left Side Nav Bar
+// the bottom 2 functions add/remove the classes to make the transition active
+
+// be aware that other CSS stuff isn't overriding this code
+
+.showMe{
+    /* visibility: hidden; */
+
+    width: 0px;
+    transition: width 200ms;
+    position: absolute;
+    top:0;
+    left: 0;
+    
+}
+
+.showMe2{
+
+    /* visibility: visible;
+    transition: visiblity 1s; */
+
+
+    width: 200px;
+    transition:width 100ms;
+
+    /* height: 100%; */
+    overflow: hidden;
+
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+//===============================
+function showNavBar(){
+    document.getElementById('navBar').classList.remove('showMe');
+    document.getElementById('navBar').classList.add('showMe2');
+}
+
+function closeNavBar(){
+    document.getElementById('navBar').classList.add('showMe');
+    document.getElementById('navBar').classList.remove('showMe2');
+}
