@@ -5,3 +5,16 @@ npm init
 npm install react react-dom --save
 
 npm install webpack webpack-dev-server babel-loader babel-preset-env babel-preset-react babel-preset-stage-2 --save-dev
+
+
+//======================
+
+npm install react react-dom --save
+npm install babel-preset-env
+
+//<.babelrc> - file
+{
+    "presets": ["env", "react"]
+}
+
+<.js file> babel -d <output folder>
