@@ -4,13 +4,26 @@
 //NEEDS npm init - 1st! - to make JSON file
 npm init 
 
+npm install -D react react-dom
+
 npm install -D babel-preset-env 
 npm install -D babel-preset-react     //for jsx??
 npm install -D webpack
 
-scripts commands
-"start": "npm run build",
-"build": "webpack -d && cp scr/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
+//file - .babelrc
+{
+    "presets": ["env", "react"]
+}
+
 
 //command to transpile code!
 babel srcFile.js -d destFolder
+
+//That's it!
+
+
+//================================
+//this may not be worth anything, oh well
+scripts commands
+"start": "npm run build",
+"build": "webpack -d && cp scr/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
