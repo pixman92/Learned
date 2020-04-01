@@ -1,0 +1,2 @@
+//great one on State VS Props
+https://lucybain.com/blog/2016/react-state-vs-pros/
