@@ -1,0 +1,16 @@
+//code for setting/updating 'state'
+
+constructor(){
+  super();
+  this.state = {
+    count: 0,
+    typeToBe: 'none',
+    countTwo: 3
+  };
+}
+
+pushCountUp(){
+  this.setState((previous)=>{
+    return {count: previous.count+1}
+  });
+}
