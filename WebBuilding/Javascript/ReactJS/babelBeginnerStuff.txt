@@ -2,6 +2,8 @@
 //maybe?
 
 //FOR LINUX - sudo (necessary!)
+//also special permissions for Linux - https://medium.com/@chillypenguin/chromebook-linux-apps-for-web-developers-902186f49b60
+
 
 //NEEDS npm init - 1st! - to make JSON file
 npm init 
