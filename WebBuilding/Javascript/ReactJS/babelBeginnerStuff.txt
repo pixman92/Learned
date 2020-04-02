@@ -1,6 +1,8 @@
 //simple babel stuff to make jsx work
 //maybe?
 
+//FOR LINUX - sudo (necessary!)
+
 //NEEDS npm init - 1st! - to make JSON file
 npm init 
 
@@ -9,6 +11,8 @@ npm install -D react react-dom
 npm install -D babel-preset-env 
 npm install -D babel-preset-react     //for jsx??
 npm install -D webpack
+
+npm install -D babel-cli
 
 //file - .babelrc
 {
