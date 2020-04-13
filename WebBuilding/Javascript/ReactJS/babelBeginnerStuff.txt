@@ -10,9 +10,13 @@ npm init
 
 npm install -D react react-dom
 
+npm install -D babel-preset-react
 npm install -D babel-preset-env 
 npm install -D babel-preset-react     //for jsx??
-npm install -D webpack
+npm install -D babel-core babel-loader
+npm install -D webpack webpack-cli
+npm install -D webpack-dev-server 
+
 
 npm install -D babel-cli
 
@@ -23,7 +27,7 @@ npm install -D babel-cli
 
 
 //command to transpile code!
-babel srcFile.js -d destFolder
+babel srcFile.js --out-file destFolder
 
 //That's it!
 
@@ -33,3 +37,8 @@ babel srcFile.js -d destFolder
 scripts commands
 "start": "npm run build",
 "build": "webpack -d && cp scr/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
+
+=======
+//to help with error handling
+webpack --display-error-details
+
