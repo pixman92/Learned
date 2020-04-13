@@ -30,7 +30,9 @@ npm install -D babel-cli
 babel srcFile.js --out-file destFolder
 
 //That's it!
-
+//babel - update:
+npm uninstall babel
+npm install --save-dev babel-cli
 
 //================================
 //this may not be worth anything, oh well
