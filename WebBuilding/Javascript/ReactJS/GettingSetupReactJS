@@ -1,0 +1,9 @@
+https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm
+
+
+
+//these steps along with the saved PDF, should get you up and running
+
+npm install env --save
+
+npm install babel-preset-es2015 --save
