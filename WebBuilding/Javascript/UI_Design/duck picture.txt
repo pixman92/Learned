@@ -22,3 +22,10 @@ addEventListener('mouseover', ()=>{
  console.log(elem.className);
   elem.className == "textMe1" ? elem.className = "textMeChange" : elem.className = "textMe1";
 });
+
+//function that does the same as mouseover
+function change(){
+  var elem = document.getElementById('textMe');
+
+  elem.className == "textMe1" ? elem.className = "textMeChange" : elem.className = "textMe1";
+}
