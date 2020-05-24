@@ -1,0 +1,10 @@
+var randoms = require('random-words');
+var fs = require('fs')
+
+console.log(randoms(500));
+var ran = randoms(500);
+
+fs.writeFile('text.txt', ran, null, ()=>{});
+
+//npm install node_modules
+//node <file>.js 
