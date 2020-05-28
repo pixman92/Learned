@@ -9,6 +9,10 @@ class MixMash{
     addTo(tag, text){
       this.el.append(el(tag, text));
     }
+    
+    addWithId(id, text){
+      this.el.append(el(id, text));
+    }
   
 }
 
@@ -16,6 +20,8 @@ var mash = new MixMash();
 mash.addTo('h1', 'yup');
 mash.addTo('div', 'here ya');
 mash.addTo('h4', 'stop it!');
+
+mash.addWithId('#hello', 'yes');        //makes <div> with 'hello' as id
 
 
 mount(document.body, mash);
