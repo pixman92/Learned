@@ -1,0 +1,40 @@
+buildHTMLArray = [];
+class MixMash{
+    constructor(){
+      this.el = el('div');
+      buildHTMLArray = [];
+    }
+    
+    addTo(tag, text){
+      this.el.append(el(tag, text));
+    }
+    
+    addWithId(id, text){
+      this.el.append(el(id, text));
+    }
+    
+    buildArray(){
+    // makes an array of HTML to be rendered on DOM
+      buildHTMLArray = [['h1', 'hello'], ['h2', 'nope'], ['h3', 'yup'], ['.meId', 'where?']]; 
+      console.log(buildHTMLArray);
+    }
+    
+    createHTML(){
+    // loops through HTML array and appendds to DOM
+      for(var i=0; i<buildHTMLArray.length; i++){
+        // var j=0;
+        this.el.append(el(buildHTMLArray[i][0], buildHTMLArray[i][1]));      
+      }
+      
+    }
+  
+    
+}
+
+
+var mash = new MixMash();
+mash.buildArray();
+mash.createHTML();
+
+
+mount(document.body, mash);
