@@ -1,0 +1,21 @@
+//    <script src="https://redom.js.org/redom.min.js"></script>
+
+
+class MixMash{
+    constructor(){
+      this.el = el('div');
+    }
+    
+    addTo(tag, text){
+      this.el.append(el(tag, text));
+    }
+  
+}
+
+var mash = new MixMash();
+mash.addTo('h1', 'yup');
+mash.addTo('div', 'here ya');
+mash.addTo('h4', 'stop it!');
+
+
+mount(document.body, mash);
