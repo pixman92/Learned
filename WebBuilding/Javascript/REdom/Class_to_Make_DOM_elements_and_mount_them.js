@@ -15,7 +15,7 @@ class MountMe{
     if(mountPoint==""){
       mount(document.body, tmp);        // if left "" - then add to document.body
     }else{
-   mount(document.getElementById(mountPoint), tmp);  
+   mount(document.querySelector(mountPoint), tmp);  
     }
     
   }
@@ -32,6 +32,6 @@ var me = new MountMe();
 
 
 me.make('#me', 'hello', "");
-me.make('#nopeDiv', 'nope', "me")
-me.make('div', 'yup', "nopeDiv");
+me.make('#nopeDiv', 'nope', "#me")
+me.make('div', 'yup', "#nopeDiv");
 me.printMe()
