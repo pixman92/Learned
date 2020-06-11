@@ -1,8 +1,10 @@
 //Regex practice examples
 
-// Regex string to extract functions name
+// Regex string to extract functions name (incase of extra chacracters before 'function' keyword)
 "}function helloThere(name, laugh){where are we?}".match(/function.*\)/ig)
 Array [ "function helloThere(name, laugh)" ]
+
+==========================
 
 //REgex
 function(?!function.*).*\)
@@ -10,6 +12,8 @@ function(?!function.*).*\)
 "}function helloThere(name, laugh){where are we?}"
 //Result
 "function helloThere(name, laugh)"
+
+==========================
 
 //Regex
 function.*(.|\n)*\}
@@ -35,6 +39,8 @@ asdfasdf
 { }
 
 }"
+
+==========================
 
 
 //Regex for extracting function name
