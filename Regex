@@ -1,0 +1,15 @@
+//Regex practice examples
+
+// Regex string to extract functions name
+"}function helloThere(name, laugh){where are we?}".match(/function.*\)/ig)
+Array [ "function helloThere(name, laugh)" ]
+
+//REgex
+function(?!function.*).*\)
+//String
+"}function helloThere(name, laugh){where are we?}"
+//Result
+"function helloThere(name, laugh)"
+
+
+function.*(.|\n)*\}
