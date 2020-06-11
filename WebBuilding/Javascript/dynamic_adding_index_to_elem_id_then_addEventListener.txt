@@ -1,0 +1,9 @@
+// in a for loop, add attributes to <div> children, (attributes are ids, to refrence later)
+document.getElementById('divBtn'+i).children[0].setAttribute("id", i);
+
+// for loop for eventListeners for each child node => to have Id used to index => for splicing out of array
+for(var i=0; i<emailFavoritesArray.length; i++){
+    document.getElementById('divBtn'+i).children[0].addEventListener('click', (event)=>{
+      console.log('removed', event.target.id);
+    });
+  }
