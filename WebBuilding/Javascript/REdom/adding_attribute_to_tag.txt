@@ -1,0 +1,5 @@
+//add attribute to a tagName
+document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+
+//add attribute to elem by Id => then its child elem
+document.getElementById('divBtn'+i).children[0].setAttribute("class", "democlass");
