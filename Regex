@@ -11,5 +11,33 @@ function(?!function.*).*\)
 //Result
 "function helloThere(name, laugh)"
 
-
+//Regex
 function.*(.|\n)*\}
+//String
+"function helloThere(name, laugh){}
+where are we?
+
+asdfasd
+asdfasdf
+asdfasdf
+{ } 
+{ }
+
+}"
+//Result
+"function helloThere(name, laugh){}
+where are we?
+
+asdfasd
+asdfasdf
+asdfasdf
+{ } 
+{ }
+
+}"
+
+
+//Regex for extracting function name
+\b(?!function)\b\S.*\b(?=\()
+//string
+"function helloThere(params1, params2)"
