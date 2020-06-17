@@ -1,0 +1,10 @@
+//pushes new repo to GITHUB
+git push origin master
+
+
+//SO 
+git init
+git add .
+git commit -m 'first commit'
+git push to <repo>          //?
+git push origin master
