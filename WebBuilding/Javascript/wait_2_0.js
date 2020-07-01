@@ -38,3 +38,6 @@ function three(){
 function wait(timout){
     return new Promise(resolve=>setTimeout(resolve, timout));
 }
+
+//======================================
+wait(time).then(()=>{});
