@@ -40,4 +40,4 @@ function wait(timout){
 }
 
 //======================================
-wait(time).then(()=>{});
+await wait(time).then(()=>{});
