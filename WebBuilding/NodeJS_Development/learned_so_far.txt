@@ -33,6 +33,29 @@ var GOOGLE_APPLICATION_CREDENTIALS="C:/Users/gotru/Documents/GitHub/NodeJS_fireb
 }
 
 
+//====================================
+
+//setting up a 3rd party NODEJS js file
+//for the purpose of making a Utility helper file
+
+const firebase = require('firebase');
+require ('firebase/firestore');
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBcKsAzRI4RIkFc2U7pHCHddXutO8vk2EM",
+    authDomain: "testingnodejs-e3499.firebaseapp.com",
+    databaseURL: "https://testingnodejs-e3499.firebaseio.com",
+    projectId: "testingnodejs-e3499",
+    storageBucket: "testingnodejs-e3499.appspot.com",
+    messagingSenderId: "1039061887731",
+    appId: "1:1039061887731:web:49d53beadc2b2e2b2e6586"
+};
+
+firebase.initializeApp(firebaseConfig);
+// var store = require('firestore/firestore');
+
+const db2 = firebase.firestore();
+
 
 //===================================
 
