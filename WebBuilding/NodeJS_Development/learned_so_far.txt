@@ -1,0 +1,39 @@
+"start": "nodemon --experimental-modules index.mjs"     //from package.json -> use? -> npm start
+
+file extensions -> .mjs //allows for experimental modules
+//===================================
+
+
+//npm install firebase-admin --save
+
+//specific Nodejs admin JS SDK 
+admin.initializeApp(
+    functions.config().firebase
+    // databaseURL: "https://testingnodejs-e3499.firebaseio.com"
+    );
+
+const db = admin.firestore();
+
+//===================================
+
+//custom NodeJS, custom scripts
+"scripts":{
+  "hello": "echo 'yup'"
+}
+
+npm run hello   //run is Critical
+
+//===================================
+
+//tmp.mjs file, allows for admin SDK
+var GOOGLE_APPLICATION_CREDENTIALS="C:/Users/gotru/Documents/GitHub/NodeJS_firebase_hello_world/functions/serviceAccount.json"
+
+"scripts":{
+  "runGoogleCred": "node --experimental-modules tmp.mjs"
+}
+
+
+
+//===================================
+
+app.use(express.json());            //allows for JSON.stringify
