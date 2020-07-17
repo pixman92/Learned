@@ -37,3 +37,9 @@ var GOOGLE_APPLICATION_CREDENTIALS="C:/Users/gotru/Documents/GitHub/NodeJS_fireb
 //===================================
 
 app.use(express.json());            //allows for JSON.stringify
+
+//==================================
+
+Simply add a "utils" folder, under "node_modules", with a "index.js" file containing:
+
+//then require that file, and var to the require
