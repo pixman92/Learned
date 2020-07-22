@@ -66,3 +66,10 @@ app.use(express.json());            //allows for JSON.stringify
 Simply add a "utils" folder, under "node_modules", with a "index.js" file containing:
 
 //then require that file, and var to the require
+
+//==================================
+
+//passing a special character paramter
+//use:
+decodeURIComponent(req.params.stringMe) //the paramater
+//then paste it into the URL bar
