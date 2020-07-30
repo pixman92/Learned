@@ -1,0 +1,20 @@
+//simple way of reading a file - line by line, in Node.js
+
+var filePath = "C:/Users/gotru/Documents/GitHub/NodeJS_SecondTry/fileInApp.txt";
+    const readInterface = readline.createInterface({
+        input: fs.createReadStream(filePath),
+        // output: process.stdout,
+        console: false
+    });
+
+    var bigString = "";
+
+    readInterface.on('line', async(line)=>{
+        // console.log(line);
+        bigString = line;
+        var splitted = bigString.split(',');
+        console.log("split", splitted[0]);
+
+        
+        res.send(bigString);
+    });
