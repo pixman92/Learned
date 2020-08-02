@@ -1,5 +1,7 @@
 
 #python file that logs 1 string with a Date timestamp() variable 
+# python C:\Users\Lynda\Documents\GitHub\Logging_Python\logging.py file log.txt
+
 
 import sys
 from datetime import datetime
