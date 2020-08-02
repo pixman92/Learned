@@ -2,7 +2,6 @@
 #python file that logs 1 string with a Date timestamp() variable 
 # python C:\Users\Lynda\Documents\GitHub\Logging_Python\logging.py file log.txt
 
-
 import sys
 from datetime import datetime
 
@@ -10,8 +9,6 @@ from datetime import datetime
 
 fileName =""
 def runFirst():
-
-    global searchFuncName 
     global fileName
 
     try:
@@ -20,12 +17,25 @@ def runFirst():
         print "args fail"
     # print args
     
-    if(args[1]=="file"):
-        fileName = args[2]
-        # print fileName
-        strLog()
-        makeTimestamp()
-        writeToFile(fileName, meInput)
+    try:
+        if(args[1]==None):
+            print "\nPlease consider\npython <stringToFile> file <fileToLogTo.txt>"
+        elif(args[1]=="file"):
+            try:
+                if(args[2]!=None and args[3]!=None):
+                    fileName = args[2]
+            # print fileName
+                    strLog()
+                    makeTimestamp()
+                    writeToFile(fileName, meInput)
+            except:
+                print "\nfailed -- no file to point to"
+                print "\nPlease consider\npython <stringToFile> file <fileToLogTo.txt>"
+        else:
+            print "\nForgot 'file'\nPlease consider\npython <stringToFile> file <fileToLogTo.txt>"
+    except:
+        print "\nfailed to point to file"
+        print "\nPlease consider\npython <stringToFile> file <fileToLogTo.txt>"
 
 
 
