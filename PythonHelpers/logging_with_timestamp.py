@@ -22,9 +22,10 @@ def runFirst():
             print "\nPlease consider\npython <stringToFile> file <fileToLogTo.txt>"
         elif(args[1]=="file"):
             try:
-                if(args[2]!=None and args[3]!=None):
+                if(args[1]!=None and args[2]!=None):
                     fileName = args[2]
-            # print fileName
+                    # print args
+                    # print fileName
                     strLog()
                     makeTimestamp()
                     writeToFile(fileName, meInput)
