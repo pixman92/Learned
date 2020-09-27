@@ -23,5 +23,13 @@ class Message{
         console.log(this.returnMessageText());
     }
   
+    //tmp code to demonstrate <var>s in Class Method
+    printEmailAndMessage(){
+      var total = "";
+      var email = this.returnToEmail();
+      var msg = this.returnMessageText();
+      total = email + ' ' + msg;
+      console.log(total);
+    }
     
   }
