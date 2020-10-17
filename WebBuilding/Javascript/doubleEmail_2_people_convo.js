@@ -1,10 +1,10 @@
 //=========================================
-var whereIds=[];
-var whereIds2=[];
+var doubleWhereIds=[];
+var doubleWhereIds2=[];
 
 var tmp; var tmp2; var tmp3;
 async function doubleEmail(root, firstParam, thirdParam,  callback){
-    doubleWhereIds=[];
+    doubleWhereIds=[]; doubleWhereIds2=[];
     try{
         let first = await one();
         let second = await two(first);
