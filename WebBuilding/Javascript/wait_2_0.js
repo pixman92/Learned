@@ -40,4 +40,4 @@ function wait(timeout){
 }
 
 //======================================
-await wait(time).then(()=>{});
+await wait(<time>).then(()=>{});
