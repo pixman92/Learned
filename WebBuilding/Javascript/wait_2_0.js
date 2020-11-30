@@ -36,7 +36,7 @@ function three(){
 
 //========================================
 function wait(timeout){
-    return new Promise(resolve=>setTimeout(resolve, timout));
+    return new Promise(resolve=>setTimeout(resolve, timeout));
 }
 
 //======================================
