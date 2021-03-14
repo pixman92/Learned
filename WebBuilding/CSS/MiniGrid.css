@@ -1,0 +1,9 @@
+.miniGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+  grid-template-areas: 
+  "iconMe nameMe";
+}
+.iconMe{grid-area: iconMe;}
+.nameMe{grid-area: nameMe;}
