@@ -1,0 +1,16 @@
+===
+1st Module - LiveReload
+https://pypi.org/project/livereload/
+This module allows for a localhost environment, one that refreshes after each Save.
+
+This CLI is:
+livereload -p 80
+
+===
+2nd Module - pyngrok
+https://alexdlaird.medium.com/pyngrok-a-python-wrapper-for-ngrok-ceb2f25229fd
+This module is a ngrok wrapper. Allowing for quick pushing of a localhost session, mentioned above.
+
+This CLI is:
+ngrok http 80
+
