@@ -12,3 +12,15 @@ function addCSS(maxOrMin, screenSize, element, style, change){
 }
 
 // https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js
+
+
+
+// wrapped in a nice little Class
+class ScreenSize{
+
+    addCSS(maxOrMin, screenSize, element, style, change){
+     enquire.register("screen and ("+maxOrMin+"-width: "+screenSize+")", ()=>{    
+       document.querySelector(element).style[style] = change;
+    });
+    }
+}
