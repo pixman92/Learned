@@ -4,3 +4,8 @@
     justify-items: center;
     align-items: center;
 }
+
+.centerHorizontaly{
+  margin: auto;
+  width: 50%;
+}
