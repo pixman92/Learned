@@ -1,0 +1,10 @@
+git init
+     git add .
+     git clone HTTPS
+     git push <orign master>
+
+     git username
+     git password
+
+git remote add origin https://github.com/pixman92/MicroShare.git
+     git push --set-upstream origin master
