@@ -8,3 +8,7 @@ git init
 
 git remote add origin https://github.com/pixman92/MicroShare.git
      git push --set-upstream origin master
+
+
+
+git config --global credential.helper store            // to store credientials
