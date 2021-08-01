@@ -1,7 +1,7 @@
 git init
      git add .
      git clone HTTPS
-     git push <orign master>
+     git push origin <master/branchName>
 
      git username
      git password
