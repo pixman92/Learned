@@ -12,3 +12,7 @@ git remote add origin https://github.com/pixman92/MicroShare.git
 
 
 git config --global credential.helper store            // to store credientials
+
+
+=================
+git checkout -b branch-name
