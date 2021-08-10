@@ -14,3 +14,14 @@ var elem = document.getElementById('id');
         }
 
     });
+
+//=================
+//another way of identifying DOM objs and clicking them
+Gator(document).on('click', (event)=>{
+    var target = event.target;
+    if(target.id == UID){
+      console.log('matches, ', UID);
+    }
+    // debugger;
+  });
+    
