@@ -2,6 +2,11 @@
 // adds CSS to it
 // then prints all 
 
+//REMEMBER
+//max? - goes down
+//min? - goes up
+
+
 //new single function
 var savedCSSArray = [];
 function makeCSS(element, style, value, minOrMax, screenSize){
