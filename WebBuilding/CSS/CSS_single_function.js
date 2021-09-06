@@ -4,7 +4,7 @@
 
 //new single function
 var savedCSSArray = [];
-function makeCSSIt(element, style, value, minOrMax, screenSize){
+function makeCSS(element, style, value, minOrMax, screenSize){
   savedCSSArray.push([element, style, value, minOrMax, screenSize]);
 }
 
@@ -14,4 +14,11 @@ function applyCSS(){
        document.querySelector(savedCSSArray[index][0]).style[savedCSSArray[index][1]] = savedCSSArray[index][2];
       });
     });
+}
+
+function foo(){
+  makeCSSIt('#test', 'fontSize', '4em', 'max', '500px');
+  makeCSSIt('#test', 'fontSize', '8em', 'min', '500px');
+  applyCSS();
+
 }
