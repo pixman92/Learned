@@ -1,0 +1,22 @@
+/* icons CSS to embed */
+<!-- GOOGLE icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- example -->
+<i class="material-icons">home</i>
+
+
+
+/* class of display:flex */
+/* .flexItem -> grow to evenly dispace items */
+
+.flexMe{
+  display: flex;
+  justify-content: space-between;  
+/*   align-content: space-around; */
+  align-content: space-evenly;
+}
+
+.flexItem{
+/*   align-self: center; */
+  flex-grow:1;
+}
