@@ -1,3 +1,14 @@
+var db;
+window.onload=()=>{
+    makeInstance()
+    console.log('hey!');
+}
+
+function makeInstance(){
+    firebase.initializeApp(firebaseConfig);
+    db = firebase.database();
+}
+
 function adding(root, data){
     //function that adds to firebase
     //when there is no existing doc, already
