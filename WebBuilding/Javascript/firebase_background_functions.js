@@ -1,7 +1,7 @@
 var db;
 window.onload=()=>{
     makeInstance()
-    console.log('hey!');
+//     console.log('hey!');
 }
 
 function makeInstance(){
