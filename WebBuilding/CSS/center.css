@@ -9,3 +9,10 @@
   margin: auto;
   width: 50%;
 }
+
+/* ================= */
+/* OR */
+.centerHorizontaly2{
+      display: flex;
+      justify-content: center; /* horizontal */
+}
