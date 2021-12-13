@@ -10,3 +10,13 @@ git branch -a
 
 // delete branch locally
 git branch -d localBranchName
+
+// list all commits
+git log --oneline
+
+
+//port difference to a file
+git diff <branch1> <branch2> > my.patch
+
+//pull full file from a commit > to a file
+git show 5489d81:./style.css > madenew.txt
