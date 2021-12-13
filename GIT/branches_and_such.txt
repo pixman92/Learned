@@ -1,0 +1,12 @@
+//to compare two branches and a file
+git diff branch1 branch2 file.txt
+
+
+// Example for creating a new branch named myNewBranch
+git checkout -b myNewBranch
+
+//list all branches
+git branch -a
+
+// delete branch locally
+git branch -d localBranchName
