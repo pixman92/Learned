@@ -15,6 +15,9 @@ git branch -d localBranchName
 git log --oneline
 
 
+//commit & file comparisons
+git diff <commit Old>:<file> <commitNew>:<file> > patch.txt
+
 //port difference to a file
 git diff <branch1> <branch2> > my.patch
 
