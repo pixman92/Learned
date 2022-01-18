@@ -5,12 +5,14 @@
 // <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js" defer></script>
 
 
-import firebase from 'firebase';
-
-const firebaseConfig = {
+const firebase = {
 	// config file from firebase
 };
+var db = firebase.firestore();
 
+
+
+// =================OLD=================
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 // for database
