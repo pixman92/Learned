@@ -2,6 +2,7 @@
 // basic pushing and pulling to Firebase
 window.onload = ()=>{
   init();
+  collectionName = <insertName>;
 };
 var db;
 function init(){
@@ -12,7 +13,7 @@ function init(){
 
 function pullData(){
   // your standard - pulling data from Firebase
-  db.collection("YouTube").get().then((querySnapshot) => {
+  db.collection(collectionName).get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
     });
@@ -21,7 +22,7 @@ function pullData(){
 
 function pushData(data){
   // data should be JSONstring, for beginning a data push to a new record
-  db.collection("YouTube").add(data).then((docRef) => {
+  db.collection(collectionName).add(data).then((docRef) => {
       console.log("Document written with ID:", docRef.id);
   })
   .catch((error) => {
@@ -42,7 +43,7 @@ async function pullEmailGetUID(emailSearch){
     //pull - that uses ALL method
     // async function pull(_callback){
     var savedArrayUID = []; var savedArrayEmails = [];
-    await db.collection("YouTube").get().then((querySnapshot) => {
+    await db.collection(collectionName).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             savedArrayUID.push(doc.id);
             savedArrayEmails.push(doc.data());
@@ -56,7 +57,7 @@ async function pullEmailGetUID(emailSearch){
 function pullEmailGetUIDWhere(emailSearch){
     //pull that uses "WHERE" method
     var savedArrayUID = []; var savedArrayEmails = [];  
-    db.collection('YouTube').where('email', '==', emailSearch).get()
+    db.collection(collectionName).where('email', '==', emailSearch).get()
     .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             savedArrayUID.push(doc.id);
@@ -100,7 +101,7 @@ var wholeDocDataPull = [];
 function pullDataBasedOnUID(){
     //pulls based on a found 'savedUIDstr'
     try{
-        db.collection('YouTube').doc(savedUIDstr).get().then(doc =>{
+        db.collection(collectionName).doc(savedUIDstr).get().then(doc =>{
             console.log(doc.data());
             wholeDocDataPull.push(doc.data());
             console.log('...saved to wholeDocDataPull...');
@@ -120,7 +121,7 @@ function addToFirebaseBasedOnUID(objName, dataString){
     
     // obj['test'] = JSON.stringify(obj['test']);
     try{
-        db.collection('YouTube').doc(savedUIDstr).set(obj, {merge: true});
+        db.collection(collectionName).doc(savedUIDstr).set(obj, {merge: true});
 
     }catch(err){
         console.log('Errored out, ', err);
