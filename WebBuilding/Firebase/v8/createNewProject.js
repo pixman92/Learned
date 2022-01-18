@@ -1,6 +1,10 @@
 //how to import Firebase v8 
 //into web app
 
+// <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" defer></script>
+// <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js" defer></script>
+
+
 import firebase from 'firebase';
 
 const firebaseConfig = {
