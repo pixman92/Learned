@@ -4,17 +4,15 @@
 // <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" defer></script>
 // <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js" defer></script>
 
-const firebaseConfig = {
-// 	...	
-};
-
 window.onload = ()=>{ 
-      init(); 
-	
+      init(); 	
       collectionName = 'flashCards'; 
 }; 
 var db; 
 function init(){ 
+    const firebaseConfig = {
+        // 	...	
+    };
     var firebaseApp = firebase.initializeApp(firebaseConfig);
 
     var db = firebase.firestore(); 
