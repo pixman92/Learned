@@ -15,7 +15,7 @@ function init(){
     };
     var firebaseApp = firebase.initializeApp(firebaseConfig);
 
-    var db = firebase.firestore(); 
+    db = firebase.firestore(); 
 }
 // =================
 
