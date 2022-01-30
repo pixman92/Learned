@@ -1,0 +1,3 @@
+python /mnt/chromeos/MyFiles/Code/AutoPy/autoPull.py 
+
+python /mnt/chromeos/MyFiles/Code/AutoPy/runPy.py
