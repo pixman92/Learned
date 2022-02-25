@@ -10,8 +10,8 @@ $(document).click((event) => {
 
 // is for the div -> when pressed -> turned into a TEXTAREA
 
-var savedDeckNameFrontScreen = $('.deckNameText').text();           //saving text before edit
     $('.deckNameText').on('click', (event)=>{                           //setting up DOM eventlistener
+        var savedDeckNameFrontScreen = $('.deckNameText').text();           //saving text before edit
         event.stopPropagation();
         $('.deckNameText').html('<textarea class="deckNameTextArea">'+savedDeckNameFrontScreen+'</textarea>')       //transfer to NEW HTML
 
@@ -28,6 +28,7 @@ $('body').on('click', (event) => {                                              
             holding1 = $('.deckNameTextArea').val(); 
             $('.deckNameText').html();                                          //reset html
             $('.deckNameText').html('<div>'+ holding1 + '</div>');
-            makeThemEditable();
         }        
+     $('body').off();
+     makeThemEditable();
 });
