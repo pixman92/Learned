@@ -18,7 +18,7 @@ function outOfCode(clickedItem, closestElement){
       $('.'+clickedItem).html('<textarea class="newName">'+savedNameFrontScreen+'</textarea>')       //transfer to NEW HTML
 
 
-      console.log('holding1', holding1);
+      console.log('SavedText: ', savedNameFrontScreen);
       $('.'+clickedItem).off();
   });       
 
