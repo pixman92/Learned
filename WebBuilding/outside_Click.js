@@ -16,7 +16,7 @@ $(document).click((event) => {
         $('.deckNameText').html('<textarea class="deckNameTextArea">'+savedDeckNameFrontScreen+'</textarea>')       //transfer to NEW HTML
 
       
-        console.log('holding1', holding1);
+        console.log('SavedText: ' , savedDeckNameFrontScreen);
         $('.deckNameText').off();
 });       
 
