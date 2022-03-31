@@ -12,14 +12,14 @@ function outOfCode(clickedItemClass, closestElement){
 
   // is for the div -> when pressed -> turned into a TEXTAREA
 
-      $('.'+clickedItem).on('click', (event)=>{                           //setting up DOM eventlistener
-          var savedNameFrontScreen = $('.'+clickedItem).text();           //saving text before edit
-          event.stopPropagation();
-          $('.'+clickedItem).html('<textarea class="newName">'+savedNameFrontScreen+'</textarea>')       //transfer to NEW HTML
+  $('.'+clickedItem).on('click', (event)=>{                           //setting up DOM eventlistener
+      var savedNameFrontScreen = $('.'+clickedItem).text();           //saving text before edit
+      event.stopPropagation();
+      $('.'+clickedItem).html('<textarea class="newName">'+savedNameFrontScreen+'</textarea>')       //transfer to NEW HTML
 
 
-          console.log('holding1', holding1);
-          $('.'+clickedItem).off();
+      console.log('holding1', holding1);
+      $('.'+clickedItem).off();
   });       
 
   // when clicked outside, save the change!
@@ -34,3 +34,4 @@ function outOfCode(clickedItemClass, closestElement){
        $('body').off();
 //        makeThemEditable();
   });
+}
