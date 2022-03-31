@@ -27,9 +27,9 @@ function outOfCode(clickedItem, closestElement){
           if (!$(event.target).closest('.'+closestElement).length) {                     // if click is outside
               // the click occured outside '#element'
               console.log('i ran out of the box');     
-              holding1 = $('.'+newName).val(); 
+              savedNameFrontScreen = $('.newName').val(); 
               $('.'+clickedItem).html();                                          //reset html
-              $('.'+clickedItem).html('<div>'+ holding1 + '</div>');
+              $('.'+clickedItem).html('<div>'+ savedNameFrontScreen + '</div>');
           }        
        $('body').off();
 //        makeThemEditable();
