@@ -1,4 +1,4 @@
-function outOfCode(clickedItem, closestElement){
+function outOfCode(clickedItemClass, closestElement){
   
   // code that allows function to run - if clicked out of bounds
 //   $(document).click((event) => {
@@ -27,7 +27,7 @@ function outOfCode(clickedItem, closestElement){
           if (!$(event.target).closest('.'+savedNameFrontScreen).length) {                     // if click is outside
               // the click occured outside '#element'
               console.log('i ran out of the box');     
-              holding1 = $('.'+savedNameFrontScreen).val(); 
+              holding1 = $('.'+newName).val(); 
               $('.'+clickedItem).html();                                          //reset html
               $('.'+clickedItem).html('<div>'+ holding1 + '</div>');
           }        
