@@ -1,6 +1,7 @@
 git init
      git add .
      git clone HTTPS
+     // switch Current Directory, the <git init> may be for a different directory
      git push origin <master/branchName>
 
      git username
