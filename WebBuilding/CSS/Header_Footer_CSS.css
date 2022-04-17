@@ -1,0 +1,108 @@
+.bigHeader{
+  width: 100vw;
+  text-align: center;
+}
+.bigHeader div{
+  font-size: 5vh;
+}
+
+/* ================= */
+.headerClass{
+  position: fixed;
+  left: 0;
+  top: 0em;
+  width: 100%;
+  backgroundColor: #222;
+/*   color: white; */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+/*   flex-grow: 1; */
+/*   align-items: center; */
+  margin-top:.8em;
+}
+.headerClass div, .footerClass div{
+  margin: auto;
+  font-size: 5vh;
+}
+
+.footerClass{
+  position: fixed;
+  left: 0;
+  bottom: 0em;
+  width: 100%;
+  backgroundColor: #222;
+/*   color: white; */
+  textAlign: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+/*   flex-grow: 1; */
+/*   align-items: center; */
+  margin-bottom:.8em;
+}
+
+.box {
+  margin-top: 9vh;
+  margin-bottom: 7vh;
+  border: 3px red;
+  height: 100%;
+ 
+}
+.box textarea{
+  width:97%;
+  padding: 3vh;
+  font-size: 5vh;
+/*   margin-bottom: auto; */
+  height: 84vh;
+
+}
+/* ================= */
+body {
+    margin: 0;
+}
+/* #textbox {
+    width: 100vw;
+    height: 100vh;
+} */
+
+/* ================================== */
+
+<div class="headerClass">
+  <div class="one">
+    one
+  </div>
+  <div class="two">
+    two
+  </div>
+  <div class="three">
+    three
+  </div>
+  <div class="four">
+    four
+  </div>
+</div>
+
+<!-- ================= -->
+<div class="box">
+  <div class="bigHeader">
+  <div>
+    alsdfasdsdf
+  </div>
+</div>
+  <textarea class="text"></textarea>
+</div>
+
+<!-- ================= -->
+<div class="footerClass">
+  <div class="oneBottom">
+    one
+  </div>
+  <div class="twoBottom">
+    two
+  </div>
+  <div class="threeBottom">
+    three
+  </div>
+</div>
