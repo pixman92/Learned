@@ -1,0 +1,32 @@
+// starts up the server
+sudo docker version
+
+// basics of a Dockerfile 
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+
+// run Dockerfile command
+sudo docker build -t hello-docker .
+
+
+// ls of all docker images
+sudo docker image ls
+
+// run the docker image, using its engine (here node.js is used)
+sudo docker run <image name>
+
+// login to upload!
+docker login --username=yourhubusername --email=youremail@company.com
+
+// tag your image
+docker tag <local image>:1.0 <user name>/<local image>:1.0
+
+// push to cloud
+//first tag it!
+sudo docker tag <local image name>:<tag> <repo username>/<image name>:<tag>
+// then push it
+sudo docker push <username>/<image name>:<tag>
+
