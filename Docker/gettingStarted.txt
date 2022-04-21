@@ -10,6 +10,10 @@ CMD node app.js
 
 // run Dockerfile command
 sudo docker build -t hello-docker .
+sudo docker build --platform linux/amd64  -t hello-docker .
+(linux/arm64) - just my Acer Chromebook
+(linux/amd64) - most OS
+
 
 
 // ls of all docker images
@@ -30,3 +34,7 @@ sudo docker tag <local image name>:<tag> <repo username>/<image name>:<tag>
 // then push it
 sudo docker push <username>/<image name>:<tag>
 
+
+
+
+// thearborist
