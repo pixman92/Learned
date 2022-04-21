@@ -38,3 +38,4 @@ sudo docker push <username>/<image name>:<tag>
 
 
 // thearborist
+// --platform linux/amd64
