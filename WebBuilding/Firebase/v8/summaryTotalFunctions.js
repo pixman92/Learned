@@ -10,7 +10,7 @@
 // cli install - npm install -g firebase-tools
 
 // script for init
-<script>
+// <script>
       const firebaseConfig = {
         apiKey: "",
         authDomain: "",
@@ -24,7 +24,7 @@
     var firebaseApp = firebase.initializeApp(firebaseConfig);
 
     db = firebaseApp.firestore();
-</script>
+// </script>
 
 
 // ========================================================
