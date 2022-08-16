@@ -7,6 +7,7 @@
 
 // auth website - https://firebase.google.com/docs/auth/web/start#web-version-8
 
+// cli install - npm install -g firebase-tools
 
 // script for init
 <script>
