@@ -29,14 +29,14 @@ const chain = (fns) => {
   return chainer;
 };
 
-const example = async () => {
-  console.log("Starting");
-  await chain([
-    () => console.log("First function"),
-    () => console.log("Second function"),
-    () => console.log("Third function"),
-  ]).start();
-  console.log("Finished");
-};
+// const example = async () => {
+//   console.log("Starting");
+//   await chain([
+//     () => console.log("First function"),
+//     () => console.log("Second function"),
+//     () => console.log("Third function"),
+//   ]).start();
+//   console.log("Finished");
+// };
 
-example();
+// example();
